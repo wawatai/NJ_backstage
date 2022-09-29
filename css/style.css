@@ -310,6 +310,11 @@ html body {
   width: 100%;
   height: 100%;
 }
+html body main {
+  width: 100%;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
 html body header {
   width: 100%;
   height: 50px;
@@ -369,7 +374,6 @@ html body header .title {
 html body .mainWrap {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: auto;
   padding-bottom: 7vw;
 }
 html body .mainWrap .top {
@@ -780,7 +784,6 @@ html body .mainWrap .listBox .tableBox table tr td p {
 html body .activeWrap {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: auto;
   padding-bottom: 7vw;
 }
 html body .activeWrap .top {
@@ -964,7 +967,6 @@ html body .activeWrap .bottom .tableBox table tr td p {
 html body .profitWrap {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: auto;
   padding-bottom: 7vw;
 }
 html body .profitWrap .top {
@@ -1412,7 +1414,6 @@ html body .profitWrap .listBox .totalBox table tr td p {
 html body .memberWrap {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: auto;
   padding-bottom: 7vw;
   padding: 16px 16px 7vw;
 }
@@ -1595,7 +1596,6 @@ html body .memberWrap ul li .checkBtn:active, html body .memberWrap ul li .check
 html body .loginRecordWrap {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: auto;
   padding-bottom: 7vw;
   padding: 4vw 0 7vw;
 }
@@ -1639,7 +1639,6 @@ html body .loginRecordWrap table tr td p {
 html body .gameReportWrap {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: auto;
   padding-bottom: 7vw;
 }
 html body .gameReportWrap .top {
@@ -2000,7 +1999,6 @@ html body .gameReportWrap .bottom .tableBox table tr td p i span::before {
 html body .agentWrap {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: auto;
   padding-bottom: 7vw;
   padding: 5vw 0 7vw;
 }
@@ -2102,7 +2100,6 @@ html body .agentWrap .tableBox table tr td p {
 html body .agent_innerWrap {
   width: 100%;
   height: calc(100vh - 80px);
-  overflow-y: auto;
   padding-bottom: 7vw;
   padding: 16px 16px 7vw;
 }
@@ -2188,7 +2185,9 @@ html body footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 html body footer p {
   color: #ffffff;
