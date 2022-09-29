@@ -58,6 +58,35 @@ $pageBox_page_Color: #212529;
 $pageBox_page_ActiveBG: #44bac1;
 $pageBox_page_ActiveColor: #ffffff;
 
+//tips
+$tips_BG: #343434;
+$tips_Color: #ffffff;
+@mixin tips {
+    width: auto;
+    height: auto;
+    background: #343434;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 3vw;
+    font-weight: bold;
+    position: absolute;
+    white-space: nowrap;
+    padding: 5px 5px 6px;
+    display: none;
+
+    &.display {
+        display: block;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+}
+
 //jumpWindow
 $jumpWindow_BG: #f5f9fc;
 $jumpWindow_Border_1: #44bac1;
@@ -125,7 +154,7 @@ $jumpWindow_changePW_targetBG: #e1e8ed;
     border-radius: 3px;
     border: solid 1px #dee2e6;
     color: #212529;
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -133,7 +162,7 @@ $jumpWindow_changePW_targetBG: #e1e8ed;
     padding: 0 16px;
 
     &.active {
-        border-color: #29abe2;
+        border: solid 2px #29abe2;
     }
 }
 
@@ -146,7 +175,7 @@ $jumpWindow_changePW_targetBG: #e1e8ed;
     border-radius: 3px;
     border: solid 1px #dee2e6;
     color: #606266;
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: bold;
     padding-left: 8px;
 }
@@ -161,7 +190,7 @@ $selectStyle_secondBG: #f5f9fc;
     border-radius: 3px;
     border: solid 1px #dee2e6;
     color: #606266;
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: bold;
 }
 $inputStyle_1_BG: #ffffff;
@@ -171,7 +200,7 @@ $inputStyle_1_Color: #606266;
     border-radius: 3px;
     border: solid 1px #495057;
     color: #212529;
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: bold;
     padding-left: 16px;
 
@@ -189,7 +218,7 @@ $inputStyle_1_Color: #606266;
     border-radius: 3px;
     border: none;
     color: #ffffff;
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: bold;
 
     &:active,&.active {
@@ -201,7 +230,7 @@ $inputStyle_1_Color: #606266;
     border-radius: 3px;
     border: none;
     color: #ffffff;
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: bold;
 
     &:active,&.active {
@@ -213,7 +242,7 @@ $inputStyle_1_Color: #606266;
     border-radius: 3px;
     border: none;
     color: #ffffff;
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: bold;
 
     &:active,&.active {
@@ -225,7 +254,7 @@ $inputStyle_1_Color: #606266;
     border-radius: 3px;
     border: solid 1px #dee2e6;
     color: #606266;
-    font-size: 3.4vw;
+    font-size: 3.7vw;
     font-weight: bold;
     padding-bottom: 4px;
 

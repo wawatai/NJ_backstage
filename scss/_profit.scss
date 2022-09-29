@@ -70,7 +70,35 @@
                     width: 5vw;
                     height: 5vw;
                     flex-shrink: 0;
+                    position: relative;
                     margin-left: 8px;
+
+                    span {
+                        @include tips;
+                        top: -40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        &.sp {
+                            left: unset;
+                            right: 0;
+                            transform: translateX(0);
+
+                            &::before {
+                                left: unset;
+                                right: 5px;
+                                transform: translateX(0);
+                            }
+                        }
+
+                        &::before {
+                            border-width: 6px 4px 0 4px;
+                            border-color: $tips_BG transparent;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -6px;
+                        }
+                    }
                 }
 
                 p {
@@ -119,6 +147,26 @@
                         font-size: 5vw;
                         flex-shrink: 0;
                         margin-right: 8px;
+                    }
+
+                    i {
+                        width: 6vw;
+                        height: 6vw;
+                        position: relative;
+                        margin: -1px 0 0 8px;
+
+                        span {
+                            @include tips;
+                            top: -30px;
+                            left: -85px;
+    
+                            &::before {
+                                border-width: 6px 4px 0 4px;
+                                border-color: $tips_BG transparent;
+                                left: 93px;
+                                bottom: -6px;
+                            }
+                        }
                     }
                 }
             }
@@ -181,7 +229,7 @@
 
             span {
                 color: $table_TitleColor_1;
-                font-size: 3.4vw;
+                font-size: 3.7vw;
                 font-weight: bold;
                 display: flex;
                 align-items: center;
@@ -223,7 +271,7 @@
     
                         p {
                             color: $table_TitleColor_1;
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             font-weight: bold;
                             line-height: 4vw;
                             white-space: nowrap;
@@ -260,7 +308,7 @@
 
                         p {
                             color: $table_Color_1;
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             font-weight: bold;
                             line-height: 4vw;
                             text-align: center;
@@ -324,7 +372,7 @@
 
                         p {
                             color: $table_Color_1;
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             font-weight: bold;
                             line-height: 4vw;
                             text-align: center;

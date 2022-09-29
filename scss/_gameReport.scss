@@ -147,7 +147,7 @@
 
             p {
                 color: $table_TitleColor_1;
-                font-size: 3.4vw;
+                font-size: 3.7vw;
                 font-weight: bold;
             }
 
@@ -214,7 +214,7 @@
     
                         p {
                             color: $table_TitleColor_1;
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             font-weight: bold;
                             line-height: 4vw;
                             display: flex;
@@ -267,10 +267,53 @@
 
                         p {
                             color: $table_Color_1;
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             font-weight: bold;
                             line-height: 4.5vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             text-align: center;
+
+                            i {
+                                width: 4vw;
+                                height: 4vw;
+                                position: relative;
+                                margin-left: 5px;
+
+                                span {
+                                    @include tips;
+                                    top: -35px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+
+                                    &.sp {
+                                        line-height: 5.5vw;
+                                        top: 50%;
+                                        left: unset;
+                                        right: 22px;
+                                        transform: translate(0,-50%);
+
+                                        &::before {
+                                            border-width: 4px 0 4px 6px;
+                                            border-color: transparent $tips_BG;
+                                            top: 50%;
+                                            bottom: unset;
+                                            left: unset;
+                                            right: -5px;
+                                            transform: translate(0,-50%);
+                                        }
+                                    }
+        
+                                    &::before {
+                                        border-width: 6px 4px 0 4px;
+                                        border-color: $tips_BG transparent;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        bottom: -6px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

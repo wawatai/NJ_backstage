@@ -65,6 +65,14 @@ $(function(){
     })
 })
 
+//tips
+$(function(){
+    $(".question_ic").on("click",function(){
+        $(this).find("span")
+        .toggleClass("display");
+    })
+})
+
 //downList
 $(function(){
     $(".downList .btnBox button").on("click",function(){
@@ -248,6 +256,21 @@ $(function(){
         .removeClass("display");
 
         $(".filter,.firstWindow")
+        .addClass("display");
+    })
+
+    $(".openBet").on("click",function(){
+        $(".jumpWindow,.leftList,.downList")
+        .removeClass("display");
+
+        $(".filter,.agentWindow.bet")
+        .addClass("display");
+    })
+    $(".openCost").on("click",function(){
+        $(".jumpWindow,.leftList,.downList")
+        .removeClass("display");
+
+        $(".filter,.agentWindow.cost")
         .addClass("display");
     })
 })

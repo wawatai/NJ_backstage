@@ -50,7 +50,7 @@
 
             .smallTitle {
                 color: $mainColor_1;
-                font-size: 3.4vw;
+                font-size: 3.7vw;
                 font-weight: bold;
                 padding: 0 16px;
             }
@@ -99,7 +99,7 @@
 
                         p {
                             color: $checkboxStyle_Color;
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             font-weight: bold;
 
                             &.active {
@@ -123,7 +123,7 @@
 
                 p {
                     color: $mainColor_1;
-                    font-size: 3.4vw;
+                    font-size: 3.7vw;
                     font-weight: bold;
                 }
 
@@ -351,7 +351,7 @@
 
                     p {
                         color: $subBG_2_mainColor;
-                        font-size: 3.4vw;
+                        font-size: 3.7vw;
                         font-weight: bold;
                         display: flex;
                         align-items: center;
@@ -746,7 +746,7 @@
 
                 .name {
                     color: $mainColor_2;
-                    font-size: 3.4vw;
+                    font-size: 3.7vw;
                     font-weight: bold;
                     margin-bottom: 8px;
                 }
@@ -797,7 +797,7 @@
 
                     p {
                         color: $mainColor_1;
-                        font-size: 3.4vw;
+                        font-size: 3.7vw;
                         font-weight: bold;
                     }
                 }
@@ -859,6 +859,62 @@
                                 
                                 p {
                                     padding: 0 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.agentWindow {
+
+            .content {
+
+                .tableBox {
+
+                    table {
+    
+                        tr {
+
+                            &:last-child {
+
+                                td {
+                                    border: none;
+                                }
+                            }
+    
+                            td {
+                                width: 50%;
+                                border-bottom: solid 1px $table_Border_2;
+
+                                &:nth-of-type(2) {
+
+                                    p {
+                                        width: 80%;
+                                        margin: 0 auto;
+                                    }
+                                }
+
+                                &.negative {
+
+                                    p {
+                                        background: $table_negativeBG;
+                                        color: $table_negativeColor;
+                                    }
+                                }
+                                &.positive {
+
+                                    p {
+                                        background: $table_positiveBG;
+                                        color: $table_positiveColor;
+                                    }
+                                }
+
+                                p {
+                                    height: 75%;
+                                    border: none;
+                                    padding: 0 8px;
                                 }
                             }
                         }

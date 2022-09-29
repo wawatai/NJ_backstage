@@ -160,7 +160,8 @@ header .back_ic {
   background-size: contain;
 }
 
-.profitWrap .mid .question_ic {
+.profitWrap .mid .question_ic,
+.profitWrap .bottom .question_ic {
   background: url("../images/icon/svg/question.svg") no-repeat center;
   background-size: contain;
 }
@@ -177,6 +178,11 @@ header .back_ic {
 
 .gameReportWrap .control_ic {
   background: url("../images/icon/control.png") no-repeat center;
+  background-size: contain;
+}
+
+.gameReportWrap .question_ic {
+  background: url("../images/icon/svg/question.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -356,7 +362,7 @@ html body header .back_ic {
 }
 html body header .title {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 4.5vw;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -384,7 +390,7 @@ html body .mainWrap .top .inputBox {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,6 +534,47 @@ html body .mainWrap .listBox .mid .totalBox p.money {
       flex-shrink: 0;
   margin-right: 8px;
 }
+html body .mainWrap .listBox .mid .totalBox p i {
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+  margin: 0 0 -2px 5px;
+}
+html body .mainWrap .listBox .mid .totalBox p i span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .mainWrap .listBox .mid .totalBox p i span.display {
+  display: block;
+}
+html body .mainWrap .listBox .mid .totalBox p i span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .mainWrap .listBox .mid .totalBox p i span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -6px;
+}
 html body .mainWrap .listBox .mid .elseBox {
   width: 100%;
   height: auto;
@@ -563,7 +610,39 @@ html body .mainWrap .listBox .mid .elseBox > div .question_ic {
   height: 5vw;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
   margin-left: 8px;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -40px;
+  right: 0;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic span.display {
+  display: block;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .mainWrap .listBox .mid .elseBox > div .question_ic span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  right: 5px;
+  bottom: -6px;
 }
 html body .mainWrap .listBox .mid .elseBox > div p {
   color: #212529;
@@ -624,7 +703,7 @@ html body .mainWrap .listBox .tableTitle {
   height: 10vw;
   background: #495057;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -658,7 +737,7 @@ html body .mainWrap .listBox .tableBox table tr th:last-child {
 }
 html body .mainWrap .listBox .tableBox table tr th p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   white-space: nowrap;
@@ -692,7 +771,7 @@ html body .mainWrap .listBox .tableBox table tr td.disable p {
 }
 html body .mainWrap .listBox .tableBox table tr td p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   text-align: center;
@@ -720,7 +799,7 @@ html body .activeWrap .top .selectBox select {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-left: 8px;
 }
@@ -741,7 +820,7 @@ html body .activeWrap .top .inputBox {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,7 +866,7 @@ html body .activeWrap .top .btnBox button {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-bottom: 4px;
 }
@@ -802,7 +881,7 @@ html body .activeWrap .top .checkBtn {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: block;
   margin: 0 auto;
@@ -819,7 +898,7 @@ html body .activeWrap .bottom .tableTitle {
   height: 10vw;
   background: #495057;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -853,7 +932,7 @@ html body .activeWrap .bottom .tableBox table tr th:last-child {
 }
 html body .activeWrap .bottom .tableBox table tr th p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   white-space: nowrap;
@@ -876,7 +955,7 @@ html body .activeWrap .bottom .tableBox table tr td.positive p {
 }
 html body .activeWrap .bottom .tableBox table tr td p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   text-align: center;
@@ -999,7 +1078,55 @@ html body .profitWrap .listBox .mid > div .question_ic {
   height: 5vw;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  position: relative;
   margin-left: 8px;
+}
+html body .profitWrap .listBox .mid > div .question_ic span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .profitWrap .listBox .mid > div .question_ic span.display {
+  display: block;
+}
+html body .profitWrap .listBox .mid > div .question_ic span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .profitWrap .listBox .mid > div .question_ic span.sp {
+  left: unset;
+  right: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+html body .profitWrap .listBox .mid > div .question_ic span.sp::before {
+  left: unset;
+  right: 5px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+html body .profitWrap .listBox .mid > div .question_ic span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -6px;
 }
 html body .profitWrap .listBox .mid > div p {
   color: #212529;
@@ -1056,6 +1183,43 @@ html body .profitWrap .listBox .bottom .totalBox p.money {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 8px;
+}
+html body .profitWrap .listBox .bottom .totalBox p i {
+  width: 6vw;
+  height: 6vw;
+  position: relative;
+  margin: -1px 0 0 8px;
+}
+html body .profitWrap .listBox .bottom .totalBox p i span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -30px;
+  left: -85px;
+}
+html body .profitWrap .listBox .bottom .totalBox p i span.display {
+  display: block;
+}
+html body .profitWrap .listBox .bottom .totalBox p i span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .profitWrap .listBox .bottom .totalBox p i span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  left: 93px;
+  bottom: -6px;
 }
 html body .profitWrap .listBox .bottom .elseBox {
   width: 100%;
@@ -1120,7 +1284,7 @@ html body .profitWrap .listBox .tableTitle.active span i {
 }
 html body .profitWrap .listBox .tableTitle span {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1160,7 +1324,7 @@ html body .profitWrap .listBox .tableBox table tr th {
 }
 html body .profitWrap .listBox .tableBox table tr th p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   white-space: nowrap;
@@ -1189,7 +1353,7 @@ html body .profitWrap .listBox .tableBox table tr td.disable p {
 }
 html body .profitWrap .listBox .tableBox table tr td p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   text-align: center;
@@ -1239,7 +1403,7 @@ html body .profitWrap .listBox .totalBox table tr td:nth-of-type(1) p {
 }
 html body .profitWrap .listBox .totalBox table tr td p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   text-align: center;
@@ -1265,7 +1429,7 @@ html body .memberWrap .title {
 }
 html body .memberWrap .title p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .memberWrap ul {
@@ -1299,7 +1463,7 @@ html body .memberWrap ul li.auto {
 html body .memberWrap ul li .name {
   width: 40%;
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1319,7 +1483,7 @@ html body .memberWrap ul li .btnBox {
 }
 html body .memberWrap ul li .btnBox p {
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .memberWrap ul li .btnBox button {
@@ -1331,7 +1495,7 @@ html body .memberWrap ul li .btnBox button.changeBtn {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .memberWrap ul li .btnBox button.changeBtn:active, html body .memberWrap ul li .btnBox button.changeBtn.active {
@@ -1342,7 +1506,7 @@ html body .memberWrap ul li .btnBox button.copyBtn {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .memberWrap ul li .btnBox button.copyBtn:active, html body .memberWrap ul li .btnBox button.copyBtn.active {
@@ -1375,7 +1539,7 @@ html body .memberWrap ul li .qrBox .selectBox select {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-left: 8px;
   padding: 0 28px 0 8px;
@@ -1397,7 +1561,7 @@ html body .memberWrap ul li .qrBox button {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -1419,7 +1583,7 @@ html body .memberWrap ul li .checkBtn {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: block;
   margin: 0 auto;
@@ -1448,7 +1612,7 @@ html body .loginRecordWrap table tr th {
 }
 html body .loginRecordWrap table tr th p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
 }
@@ -1466,7 +1630,7 @@ html body .loginRecordWrap table tr td.false p {
 }
 html body .loginRecordWrap table tr td p {
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   text-align: center;
@@ -1494,7 +1658,7 @@ html body .gameReportWrap .top .selectBox select {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-left: 8px;
 }
@@ -1515,7 +1679,7 @@ html body .gameReportWrap .top .inputBox {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1561,7 +1725,7 @@ html body .gameReportWrap .top .btnBox button {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-bottom: 4px;
 }
@@ -1604,7 +1768,7 @@ html body .gameReportWrap .top .box .controlBox {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1632,7 +1796,7 @@ html body .gameReportWrap .top .checkBtn {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: block;
   margin: 0 auto;
@@ -1661,7 +1825,7 @@ html body .gameReportWrap .bottom .tableTitle {
 }
 html body .gameReportWrap .bottom .tableTitle p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .gameReportWrap .bottom .tableTitle button {
@@ -1671,7 +1835,7 @@ html body .gameReportWrap .bottom .tableTitle button {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding: 0 10px;
 }
@@ -1712,7 +1876,7 @@ html body .gameReportWrap .bottom .tableBox table tr th {
 }
 html body .gameReportWrap .bottom .tableBox table tr th p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   display: -webkit-box;
@@ -1759,10 +1923,78 @@ html body .gameReportWrap .bottom .tableBox table tr td.clickable p {
 }
 html body .gameReportWrap .bottom .tableBox table tr td p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i {
+  width: 4vw;
+  height: 4vw;
+  position: relative;
+  margin-left: 5px;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span {
+  width: auto;
+  height: auto;
+  background: #343434;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px 5px 6px;
+  display: none;
+  top: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span.display {
+  display: block;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span.sp {
+  line-height: 5.5vw;
+  top: 50%;
+  left: unset;
+  right: 22px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span.sp::before {
+  border-width: 4px 0 4px 6px;
+  border-color: transparent #343434;
+  top: 50%;
+  bottom: unset;
+  left: unset;
+  right: -5px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+html body .gameReportWrap .bottom .tableBox table tr td p i span::before {
+  border-width: 6px 4px 0 4px;
+  border-color: #343434 transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -6px;
 }
 html body .agentWrap {
   width: 100%;
@@ -1788,7 +2020,7 @@ html body .agentWrap .tableTitle {
 }
 html body .agentWrap .tableTitle p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .agentWrap .tableTitle p span {
@@ -1800,7 +2032,7 @@ html body .agentWrap .tableTitle button {
   background: none;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1842,7 +2074,7 @@ html body .agentWrap .tableBox table tr th:last-child {
 }
 html body .agentWrap .tableBox table tr th p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   white-space: nowrap;
@@ -1861,7 +2093,7 @@ html body .agentWrap .tableBox table tr td:last-child {
 }
 html body .agentWrap .tableBox table tr td p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   text-align: center;
@@ -1887,7 +2119,7 @@ html body .agent_innerWrap .tableTitle {
 }
 html body .agent_innerWrap .tableTitle p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .agent_innerWrap .tableBox {
@@ -1927,7 +2159,7 @@ html body .agent_innerWrap .tableBox table tr td.negative p {
 html body .agent_innerWrap .tableBox table tr td p {
   height: 70%;
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1959,7 +2191,7 @@ html body footer {
 }
 html body footer p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body footer .tableBox {
@@ -2024,7 +2256,7 @@ html body footer .tableBox table tr th:last-child {
 }
 html body footer .tableBox table tr th p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   white-space: nowrap;
@@ -2058,7 +2290,7 @@ html body footer .tableBox table tr td.disable p {
 }
 html body footer .tableBox table tr td p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   line-height: 4vw;
   text-align: center;
@@ -2113,7 +2345,7 @@ html body .filter .downList.hierarchyWindow .selectBox i, html body .filter .dow
 }
 html body .filter .downList.hierarchyWindow .smallTitle, html body .filter .downList.platformWindow .smallTitle {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding: 0 16px;
 }
@@ -2175,7 +2407,7 @@ html body .filter .downList.hierarchyWindow .checkBox ul li label input, html bo
 }
 html body .filter .downList.hierarchyWindow .checkBox ul li p, html body .filter .downList.platformWindow .checkBox ul li p {
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .filter .downList.hierarchyWindow .checkBox ul li p.active, html body .filter .downList.platformWindow .checkBox ul li p.active {
@@ -2200,7 +2432,7 @@ html body .filter .downList.hierarchyWindow .changeBox, html body .filter .downL
 }
 html body .filter .downList.hierarchyWindow .changeBox p, html body .filter .downList.platformWindow .changeBox p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .filter .downList.hierarchyWindow .changeBox .rowBox, html body .filter .downList.platformWindow .changeBox .rowBox {
@@ -2244,7 +2476,7 @@ html body .filter .downList .selectBox select {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-left: 8px;
 }
@@ -2265,7 +2497,7 @@ html body .filter .downList .inputBox {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2311,7 +2543,7 @@ html body .filter .downList .btnBox button {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-bottom: 4px;
 }
@@ -2326,7 +2558,7 @@ html body .filter .downList .langBox {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2341,7 +2573,7 @@ html body .filter .downList .langBox {
   margin-bottom: 16px;
 }
 html body .filter .downList .langBox.active {
-  border-color: #29abe2;
+  border: solid 2px #29abe2;
 }
 html body .filter .downList .langBox:last-child {
   margin: 0;
@@ -2361,7 +2593,7 @@ html body .filter .downList .checkBtn {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: block;
   margin: 0 auto;
@@ -2424,7 +2656,7 @@ html body .filter .leftList .topBox .selectBox select {
   border-radius: 3px;
   border: solid 1px #dee2e6;
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-left: 8px;
   background: #f5f9fc;
@@ -2493,7 +2725,7 @@ html body .filter .leftList .content .nameBox .bottom {
 }
 html body .filter .leftList .content .nameBox .bottom p {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2815,7 +3047,7 @@ html body .filter .jumpWindow.changeName .content {
 }
 html body .filter .jumpWindow.changeName .content .name {
   color: #606266;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -2830,7 +3062,7 @@ html body .filter .jumpWindow.changeName .content .inputBox input {
   border-radius: 3px;
   border: solid 1px #495057;
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-left: 16px;
 }
@@ -2858,7 +3090,7 @@ html body .filter .jumpWindow.changeName .content button.check {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: block;
   margin: 32px auto 16px;
@@ -2871,7 +3103,7 @@ html body .filter .jumpWindow.changeName .content button.back {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: block;
   margin: 0 auto;
@@ -2898,7 +3130,7 @@ html body .filter .jumpWindow.changePW .content .target {
 }
 html body .filter .jumpWindow.changePW .content .target p {
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
 }
 html body .filter .jumpWindow.changePW .content .inputBox {
@@ -2914,7 +3146,7 @@ html body .filter .jumpWindow.changePW .content .inputBox input {
   border-radius: 3px;
   border: solid 1px #495057;
   color: #212529;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   padding-left: 16px;
 }
@@ -2942,7 +3174,7 @@ html body .filter .jumpWindow.changePW .content button.check {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: block;
   margin: 32px auto 16px;
@@ -2955,7 +3187,7 @@ html body .filter .jumpWindow.changePW .content button.back {
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 3.7vw;
   font-weight: bold;
   display: block;
   margin: 0 auto;
@@ -2974,4 +3206,28 @@ html body .filter .jumpWindow.gameReportWindow .content .tableBox table tr td.po
 }
 html body .filter .jumpWindow.gameReportWindow .content .tableBox table tr td p {
   padding: 0 15px;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr:last-child td {
+  border: none;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td {
+  width: 50%;
+  border-bottom: solid 1px #dce0e2;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td:nth-of-type(2) p {
+  width: 80%;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td.negative p {
+  background: #f8d7da;
+  color: #dc3545;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td.positive p {
+  background: #d4edda;
+  color: #007bff;
+}
+html body .filter .jumpWindow.agentWindow .content .tableBox table tr td p {
+  height: 75%;
+  border: none;
+  padding: 0 8px;
 }

@@ -111,6 +111,28 @@
                         flex-shrink: 0;
                         margin-right: 8px;
                     }
+
+                    i {
+                        width: 5vw;
+                        height: 5vw;
+                        position: relative;
+                        margin: 0 0 -2px 5px;
+
+                        span {
+                            @include tips;
+                            top: -30px;
+                            left: 50%;
+                            transform: translateX(-50%);
+
+                            &::before {
+                                border-width: 6px 4px 0 4px;
+                                border-color: $tips_BG transparent;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: -6px;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -143,7 +165,21 @@
                         width: 5vw;
                         height: 5vw;
                         flex-shrink: 0;
+                        position: relative;
                         margin-left: 8px;
+
+                        span {
+                            @include tips;
+                            top: -40px;
+                            right: 0;
+
+                            &::before {
+                                border-width: 6px 4px 0 4px;
+                                border-color: $tips_BG transparent;
+                                right: 5px;
+                                bottom: -6px;
+                            }
+                        }
                     }
 
                     p {
@@ -212,7 +248,7 @@
             height: 10vw;
             background: $table_thBG_1;
             color: $table_TitleColor_1;
-            font-size: 3.4vw;
+            font-size: 3.7vw;
             font-weight: bold;
             display: flex;
             align-items: center;
@@ -246,7 +282,7 @@
     
                         p {
                             color: $table_TitleColor_1;
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             font-weight: bold;
                             line-height: 4vw;
                             white-space: nowrap;
@@ -289,7 +325,7 @@
 
                         p {
                             color: $table_Color_1;
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             font-weight: bold;
                             line-height: 4vw;
                             text-align: center;

@@ -54,7 +54,8 @@ header .back_ic {
     background: url('../images/icon/svg/hasBG_person.svg') no-repeat center;
     background-size: contain;
 }
-.profitWrap .mid .question_ic {
+.profitWrap .mid .question_ic,
+.profitWrap .bottom .question_ic {
     background: url('../images/icon/svg/question.svg') no-repeat center;
     background-size: contain;
 }
@@ -72,6 +73,10 @@ header .back_ic {
 //gameReport
 .gameReportWrap .control_ic {
     background: url('../images/icon/control.png') no-repeat center;
+    background-size: contain;
+}
+.gameReportWrap .question_ic {
+    background: url('../images/icon/svg/question.svg') no-repeat center;
     background-size: contain;
 }
 .gameReportWrap .tableBox th .arrow_db_ic {
