@@ -230,11 +230,12 @@
 
                         p {
                             color: $mainWrap_bottom_Color_3;
-                            font-size: 4vw;
+                            font-size: 4.5vw;
                             font-weight: bold;
                             
                             &.smallTitle {
                                 color: $mainWrap_bottom_Color_2;
+                                font-size: 4vw;
                                 margin-bottom: 12px;
                             }
                         }
