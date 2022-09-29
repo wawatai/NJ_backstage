@@ -312,8 +312,9 @@ html body {
 }
 html body main {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 100%;
   overflow-y: auto;
+  padding: 50px 0 45px;
 }
 html body header {
   width: 100%;
@@ -330,6 +331,9 @@ html body header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 0 16px;
 }
 html body header .listBtn {
@@ -373,7 +377,7 @@ html body header .title {
 }
 html body .mainWrap {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   padding-bottom: 7vw;
 }
 html body .mainWrap .top {
@@ -783,7 +787,7 @@ html body .mainWrap .listBox .tableBox table tr td p {
 }
 html body .activeWrap {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   padding-bottom: 7vw;
 }
 html body .activeWrap .top {
@@ -966,7 +970,7 @@ html body .activeWrap .bottom .tableBox table tr td p {
 }
 html body .profitWrap {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   padding-bottom: 7vw;
 }
 html body .profitWrap .top {
@@ -1413,7 +1417,7 @@ html body .profitWrap .listBox .totalBox table tr td p {
 }
 html body .memberWrap {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   padding-bottom: 7vw;
   padding: 16px 16px 7vw;
 }
@@ -1595,7 +1599,7 @@ html body .memberWrap ul li .checkBtn:active, html body .memberWrap ul li .check
 }
 html body .loginRecordWrap {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   padding-bottom: 7vw;
   padding: 4vw 0 7vw;
 }
@@ -1638,7 +1642,7 @@ html body .loginRecordWrap table tr td p {
 }
 html body .gameReportWrap {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   padding-bottom: 7vw;
 }
 html body .gameReportWrap .top {
@@ -1998,7 +2002,7 @@ html body .gameReportWrap .bottom .tableBox table tr td p i span::before {
 }
 html body .agentWrap {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   padding-bottom: 7vw;
   padding: 5vw 0 7vw;
 }
@@ -2099,7 +2103,7 @@ html body .agentWrap .tableBox table tr td p {
 }
 html body .agent_innerWrap {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   padding-bottom: 7vw;
   padding: 16px 16px 7vw;
 }
@@ -2174,7 +2178,7 @@ html body .agent_innerWrap .tableBox table tr td p i {
 }
 html body footer {
   width: 100%;
-  height: 30px;
+  height: 45px;
   background: #354052;
   display: -webkit-box;
   display: -ms-flexbox;
