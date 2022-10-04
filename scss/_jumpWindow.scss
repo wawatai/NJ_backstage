@@ -53,6 +53,10 @@
                 font-size: 3.7vw;
                 font-weight: bold;
                 padding: 0 16px;
+
+                &.sp {
+                    padding-bottom: 10px;
+                }
             }
 
             .checkBox {
@@ -61,8 +65,10 @@
                 padding: 10px 16px 24px;
 
                 &.sp {
+                    max-height: 45vh;
                     border-bottom: solid 1px $table_Border_2;
-                    padding: 10px 16px;
+                    padding: 0 16px 10px;
+                    overflow-y: auto;
                     margin-bottom: 10px;
 
                     ul {
@@ -490,7 +496,7 @@
 
             p {
                 color: $jumpWindow_Title;
-                font-size: 4vw;
+                font-size: 5vw;
                 font-weight: bold;
             }
 

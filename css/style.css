@@ -2355,14 +2355,19 @@ html body .filter .downList.hierarchyWindow .smallTitle, html body .filter .down
   font-weight: bold;
   padding: 0 16px;
 }
+html body .filter .downList.hierarchyWindow .smallTitle.sp, html body .filter .downList.platformWindow .smallTitle.sp {
+  padding-bottom: 10px;
+}
 html body .filter .downList.hierarchyWindow .checkBox, html body .filter .downList.platformWindow .checkBox {
   width: 100%;
   height: auto;
   padding: 10px 16px 24px;
 }
 html body .filter .downList.hierarchyWindow .checkBox.sp, html body .filter .downList.platformWindow .checkBox.sp {
+  max-height: 45vh;
   border-bottom: solid 1px #dce0e2;
-  padding: 10px 16px;
+  padding: 0 16px 10px;
+  overflow-y: auto;
   margin-bottom: 10px;
 }
 html body .filter .downList.hierarchyWindow .checkBox.sp ul, html body .filter .downList.platformWindow .checkBox.sp ul {
@@ -2872,7 +2877,7 @@ html body .filter .jumpWindow .title {
 }
 html body .filter .jumpWindow .title p {
   color: #212529;
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: bold;
 }
 html body .filter .jumpWindow .title i {
