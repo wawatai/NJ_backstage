@@ -1446,7 +1446,7 @@ html body .memberWrap ul {
 }
 html body .memberWrap ul li {
   width: 100%;
-  height: 10vw;
+  height: 12vw;
   background: #ffffff;
   border: solid 1px #dce0e2;
   border-width: 0 1px;
@@ -1473,6 +1473,7 @@ html body .memberWrap ul li .name {
   color: #212529;
   font-size: 3.7vw;
   font-weight: bold;
+  line-height: 4.5vw;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -3055,7 +3056,7 @@ html body .filter .jumpWindow.active_withdrawalTotal .content .tableBox table tr
   padding: 0 15px;
 }
 html body .filter .jumpWindow.changeName .content {
-  padding: 24px 16px;
+  padding: 24px 16px 32px;
 }
 html body .filter .jumpWindow.changeName .content .name {
   color: #606266;
@@ -3124,7 +3125,7 @@ html body .filter .jumpWindow.changeName .content button.back:active, html body 
   background: #979797;
 }
 html body .filter .jumpWindow.changePW .content {
-  padding: 16px;
+  padding: 16px 16px 32px;
 }
 html body .filter .jumpWindow.changePW .content .target {
   width: 100%;
