@@ -1,11 +1,26 @@
 //mainWrap
 $(function(){
-    $(".mainWrap .top .changeStyle").on("click",function(){
-        $(this).find("button")
-        .toggleClass("active");
+    // $(".mainWrap .top .changeStyle").on("click",function(){
+    //     $(this).find("button")
+    //     .toggleClass("active");
 
-        $(".mainWrap .listBox,footer .tableBox")
-        .toggleClass("display")
+    //     $(".mainWrap .listBox,footer .tableBox")
+    //     .toggleClass("display")
+    // })
+
+    $(".mainWrap .top .innerBox").on("click",function(){
+        if($(this).hasClass("left"))
+        {
+            $(this)
+            .removeClass("left")
+            .addClass("right");
+        }
+        else
+        {
+            $(this)
+            .removeClass("right")
+            .addClass("left");
+        }
     })
 })
 

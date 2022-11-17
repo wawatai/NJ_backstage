@@ -158,14 +158,14 @@ header .back_ic {
     background-size: contain;
 }
 
-.changeStyle .left::before {
-    background: url('../images/icon/changeStyleIcon_1.png') no-repeat center;
-    background-size: contain;
-}
-.changeStyle .right::before {
-    background: url('../images/icon/changeStyleIcon_2.png') no-repeat center;
-    background-size: contain;
-}
+// .changeStyle .left::before {
+//     background: url('../images/icon/changeStyleIcon_1.png') no-repeat center;
+//     background-size: contain;
+// }
+// .changeStyle .right::before {
+//     background: url('../images/icon/changeStyleIcon_2.png') no-repeat center;
+//     background-size: contain;
+// }
 
 .pageBox .arrowBtn i {
     background: url('../images/icon/arrow_1.png') no-repeat center;
@@ -179,5 +179,14 @@ header .back_ic {
 
 .jumpWindow .close_ic {
     background: url('../images/icon/close_1.png') no-repeat center;
+    background-size: contain;
+}
+
+.rowBox .left {
+    background: url('../images/icon/changeStyleIcon_1.png') no-repeat center;
+    background-size: contain;
+}
+.rowBox .right {
+    background: url('../images/icon/changeStyleIcon_2.png') no-repeat center;
     background-size: contain;
 }

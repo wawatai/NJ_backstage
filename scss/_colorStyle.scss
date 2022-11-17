@@ -100,50 +100,102 @@ $jumpWindow_leftList_smallListActiveColor: #ffffff;
 $jumpWindow_changePW_targetBG: #e1e8ed;
 
 //changeStyle
-@mixin changeStyle {
-    width: auto;
-    height: auto;
-    display: flex;
+// @mixin changeStyle {
+//     width: auto;
+//     height: auto;
+//     display: flex;
     
-    button {
-        width: 10vw;
-        height: 8vw;
-        background: #495568;
-        border: none;
-        position: relative;
+//     button {
+//         width: 10vw;
+//         height: 8vw;
+//         background: #495568;
+//         border: none;
+//         position: relative;
 
-        &::before {
-            content: "";
-            position: absolute;
+//         &::before {
+//             content: "";
+//             position: absolute;
+//             width: 4vw;
+//             height: 4vw;
+//             left: 50%;
+//             top: 50%;
+//             transform: translate(-50%,-50%);
+//         }
+
+//         &:first-child {
+//             border-radius: 30px 0 0 30px;
+
+//             &:active,&.active {
+//                 background: #35c8d1;
+//             }
+
+//             &::before {
+//                 left: 52%;
+//             }
+//         }
+//         &:last-child {
+//             border-radius: 0 30px 30px 0;
+
+//             &:active,&.active {
+//                 background: #ff6065;
+//             }
+
+//             &::before {
+//                 left: 48%;
+//             }
+//         }
+//     }
+// }
+
+//rowBox
+@mixin rowStyle {
+    background: #495568;
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+
+    &.left {
+        
+        .cnt {
+            background: #35c8d1;
+            left: 1%;
+        }
+    }
+    &.right {
+
+        .cnt {
+            background: #ff6065;
+            left: 51%;
+        }
+    }
+
+    p {
+        width: 50%;
+        height: 100%;
+        color: #ffffff;
+        font-size: 4vw;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+
+        i {
             width: 4vw;
             height: 4vw;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
+            margin-right: 10px;
         }
+    }
 
-        &:first-child {
-            border-radius: 30px 0 0 30px;
-
-            &:active,&.active {
-                background: #35c8d1;
-            }
-
-            &::before {
-                left: 52%;
-            }
-        }
-        &:last-child {
-            border-radius: 0 30px 30px 0;
-
-            &:active,&.active {
-                background: #ff6065;
-            }
-
-            &::before {
-                left: 48%;
-            }
-        }
+    .cnt {
+        width: 48%;
+        height: 82%;
+        border-radius: 30px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s all;
     }
 }
 
