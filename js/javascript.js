@@ -21,6 +21,9 @@ $(function(){
             .removeClass("right")
             .addClass("left");
         }
+
+        $(".mainWrap .listBox,footer .tableBox")
+        .toggleClass("display");
     })
 })
 

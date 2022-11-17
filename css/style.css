@@ -395,7 +395,7 @@ html body .mainWrap .top .rowBox {
 }
 html body .mainWrap .top .rowBox .innerBox {
   width: 100%;
-  height: 8vw;
+  height: 9.5vw;
   background: #495568;
   border-radius: 30px;
   display: -webkit-box;
@@ -430,8 +430,8 @@ html body .mainWrap .top .rowBox .innerBox p {
   z-index: 1;
 }
 html body .mainWrap .top .rowBox .innerBox p i {
-  width: 4vw;
-  height: 4vw;
+  width: 3.7vw;
+  height: 3.7vw;
   margin-right: 10px;
 }
 html body .mainWrap .top .rowBox .innerBox .cnt {
