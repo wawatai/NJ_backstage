@@ -29,9 +29,27 @@ $(function(){
 
 //profitWrap
 $(function(){
-    $(".profitWrap .changeStyle").on("click",function(){
-        $(this).find("button")
-        .toggleClass("active")
+    // $(".profitWrap .changeStyle").on("click",function(){
+    //     $(this).find("button")
+    //     .toggleClass("active")
+
+    //     $(".profitWrap .listBox")
+    //     .toggleClass("display");
+    // })
+
+    $(".profitWrap .top .innerBox").on("click",function(){
+        if($(this).hasClass("left"))
+        {
+            $(this)
+            .removeClass("left")
+            .addClass("right");
+        }
+        else
+        {
+            $(this)
+            .removeClass("right")
+            .addClass("left");
+        }
 
         $(".profitWrap .listBox")
         .toggleClass("display");
